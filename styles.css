@@ -219,3 +219,27 @@ display: flex;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateX(5px);
 }
+
+
+
+.details{
+    display: flex;
+}
+
+.img-cont{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+background-color: white;
+width: 100px;
+height: 100px;    
+padding: auto;
+margin: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-cont img{
+    width: 60px;
+    height: 60px; 
+    justify-content: center;   
+}
