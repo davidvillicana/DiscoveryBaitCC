@@ -264,3 +264,22 @@ table {
   tr:hover {
     background-color: #f1f1f1;
   }
+
+
+  .image-container {
+    width: 900px; /* Ancho fijo del contenedor */
+    height: 350px; /* Alto fijo del contenedor */
+    overflow: hidden; /* Oculta las partes ampliadas */
+    border: none; /* Borde opcional */
+    position: relative; /* Posicionamiento relativo para la imagen */
+  }
+  
+  .image-container img {
+    width: 100%; /* La imagen llena el contenedor inicialmente */
+    height: auto; /* Mantiene las proporciones */
+    transform-origin: center center; /* Punto de referencia para el zoom */
+    transform: scale(1); /* Escala inicial */
+    transition: transform 0.1s ease, top 0.1s ease, left 0.1s ease; /* Suaviza los movimientos */
+    position: absolute; /* Para desplazar la imagen dentro del contenedor */
+  }
+  
